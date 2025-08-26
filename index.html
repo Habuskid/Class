@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Student Portal</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; }
+    header, footer { background: #333; color: white; padding: 1em; }
+    nav { background: #444; padding: 0.5em; }
+    nav a { color: white; margin-right: 15px; text-decoration: none; }
+    main { padding: 1em; }
+    aside { background: #f9f9f9; padding: 1em; border-left: 4px solid #ccc; margin-top: 1em; }
+    footer { text-align: center; }
+
+    /* Marquee styles */
+    .marquee-container {
+      background-color: #eee;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      padding: 0.5em 0;
+    }
+
+    .marquee-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 15s linear infinite;
+      font-weight: bold;
+      color: #333;
+    }
+
+    @keyframes marquee {
+      0%   { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Student Portal</h1>
+  </header>
+
+<nav>
+  <a href="login.html">Login</a>
+  <a href="signup.html">Sign-Up</a>
+  <a href="about.html">About Us</a>
+</nav>
+
+
+  <!-- Marquee section -->
+  <div class="marquee-container">
+    <div class="marquee-text"> Welcome to the Student Portal! Stay updated with the latest announcements and resources. </div>
+  </div>
+
+  <main>
+    <article>
+      <h2>Importance of Modern Education</h2>
+      <p>Modern education emphasizes critical thinking, creativity, and real-world skills. It prepares students for the challenges of a rapidly evolving global environment by integrating technology and collaborative learning into the curriculum.</p>
+    </article>
+
+    <!-- Images -->
+    <img src="https://images.freeimages.com/variants/7oRN6jYExL8u2sA2fBRqD9w6/624f0dc1dff9bdccab032f93c33e79de78481770e79e21d3b0469daf51f02797" alt="Modern Education" style="max-width: 100%; height: auto; margin-top: 1em;"/>
+    <img src="https://images.freeimages.com/variants/7oRN6jYExL8u2sA2fBRqD9w6/624f0dc1dff9bdccab032f93c33e79de78481770e79e21d3b0469daf51f02797" alt="Modern Education" style="max-width: 100%; height: auto; margin-top: 1em;"/>
+    <img src="https://images.freeimages.com/variants/7oRN6jYExL8u2sA2fBRqD9w6/624f0dc1dff9bdccab032f93c33e79de78481770e79e21d3b0469daf51f02797" alt="Modern Education" style="max-width: 100%; height: auto; margin-top: 1em;"/>
+
+    <aside>
+      <h3>Did You Know?</h3>
+      <p>Students who actively engage in diverse learning environments often perform better in problem-solving and innovation.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Student Portal | Contact: info@studentportal.com</p>
+  </footer>
+
+</body>
+</html>

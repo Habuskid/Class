@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard | Student Portal</title>
+
+  <!-- Lottie Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js" integrity="sha512-+" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; }
+    header, footer { background: #333; color: white; padding: 1em; }
+    nav { background: #444; padding: 0.5em; }
+    nav a { color: white; margin-right: 15px; text-decoration: none; }
+    main { padding: 1em; }
+
+    table { border-collapse: collapse; width: 100%; margin-bottom: 2em; }
+    th, td { border: 1px solid #aaa; padding: 8px; text-align: center; }
+
+    select { padding: 0.5em; width: 250px; margin-top: 0.5em; }
+
+    footer { text-align: center; }
+
+    /* Lottie animation container */
+    #lottie-animation {
+      width: 300px;
+      height: 300px;
+      margin: 0 auto 2em;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3em;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Student Dashboard</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+     <a href="logout.html">Logout</a>
+  </nav>
+
+  <main>
+
+    <!-- Marks Section -->
+    <section id="marks">
+      <h2>Student Marks Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Serial Number</th>
+            <th>Name</th>
+            <th>Maths</th>
+            <th>Science</th>
+            <th>English</th>
+            <th>Total Marks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Grace</td><td>85</td><td>90</td><td>88</td><td>263</td></tr>
+          <tr><td>2</td><td>Smith</td><td>78</td><td>84</td><td>80</td><td>242</td></tr>
+          <tr><td>3</td><td>Charlie</td><td>92</td><td>89</td><td>95</td><td>276</td></tr>
+          <tr><td>4</td><td>Diana</td><td>70</td><td>75</td><td>78</td><td>223</td></tr>
+          <tr><td>5</td><td>Ethan</td><td>88</td><td>91</td><td>86</td><td>265</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+      <h2>Select a Course</h2>
+      <label for="course-select">Choose a course:</label>
+      <select id="course-select" name="courses">
+        <optgroup label="Science">
+          <option value="physics">Physics</option>
+          <option value="chemistry">Chemistry</option>
+          <option value="biology">Biology</option>
+        </optgroup>
+        <optgroup label="Commerce">
+          <option value="accounting">Accounting</option>
+          <option value="business">Business Studies</option>
+          <option value="economics">Economics</option>
+        </optgroup>
+        <optgroup label="Arts">
+          <option value="history">History</option>
+          <option value="geography">Geography</option>
+          <option value="political">Political Science</option>
+        </optgroup>
+      </select>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Student Portal | Contact: info@studentportal.com</p>
+  </footer>
+
+</body>
+</html>
